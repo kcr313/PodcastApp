@@ -6,15 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AAE71F1C2D2C4E84002707C9 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = AAE71F1B2D2C4E84002707C9 /* Moya */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AAE71ECD2D2C3E9C002707C9 /* PodcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AAE71EDF2D2C3E9D002707C9 /* Exceptions for "PodcastApp" folder in "PodcastApp" target */ = {
+		AAE71F0A2D2C4BC3002707C9 /* Exceptions for "PodcastApp" folder in "PodcastApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				SupportingFiles/Info.plist,
 			);
 			target = AAE71ECC2D2C3E9C002707C9 /* PodcastApp */;
 		};
@@ -24,7 +28,7 @@
 		AAE71ECF2D2C3E9C002707C9 /* PodcastApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				AAE71EDF2D2C3E9D002707C9 /* Exceptions for "PodcastApp" folder in "PodcastApp" target */,
+				AAE71F0A2D2C4BC3002707C9 /* Exceptions for "PodcastApp" folder in "PodcastApp" target */,
 			);
 			path = PodcastApp;
 			sourceTree = "<group>";
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE71F1C2D2C4E84002707C9 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = PodcastApp;
 			packageProductDependencies = (
+				AAE71F1B2D2C4E84002707C9 /* Moya */,
 			);
 			productName = PodcastApp;
 			productReference = AAE71ECD2D2C3E9C002707C9 /* PodcastApp.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = AAE71EC42D2C3E9C002707C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AAE71F1A2D2C4E84002707C9 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AAE71ECE2D2C3E9C002707C9 /* Products */;
 			projectDirPath = "";
@@ -146,10 +155,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PodcastApp/Info.plist;
+				INFOPLIST_FILE = PodcastApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -173,10 +182,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PodcastApp/Info.plist;
+				INFOPLIST_FILE = PodcastApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE71F1A2D2C4E84002707C9 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE71F1B2D2C4E84002707C9 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE71F1A2D2C4E84002707C9 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE71EC52D2C3E9C002707C9 /* Project object */;
 }
